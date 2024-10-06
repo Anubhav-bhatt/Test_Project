@@ -3,18 +3,18 @@ import imageHome from "../assets/images/ImageHome.jpg";
 
 const Home = () => {
   return (
-    <div className="flex items-start justify-center p-8 bg-white">
-      <div className="w-1/2">
-        <h1 className="text-3xl text-purple-700 mb-4 px-14">
+    <div className="flex flex-col md:flex-row items-start justify-center p-8 bg-white">
+      <div className="w-full md:w-1/2">
+        <h1 className="text-3xl text-purple-700 mb-4 px-4 md:px-14">
           WE MAKE YOUR IDEA'S <br />
           <div className="text-orange-600">INTO REALITY</div>
         </h1>
-        <p className="text-gray-700 text-justify leading-relaxed px-14">
+        <p className="text-gray-700 text-justify leading-relaxed px-4 md:px-14">
           Some quick example text to build on the card title and make up the
           bulk of the card's content. Some quick example text to build on the
           card title and make up the bulk of the card content.
         </p>
-        <div className="flex space-x-3 mt-4 px-14"> 
+        <div className="flex space-x-3 mt-4 px-4 md:px-14">
           <button className="bg-purple-600 text-white py-2 px-4 hover:bg-purple-700 focus:outline-none 
           focus:ring-2 focus:ring-purple-500">
             Get Started
@@ -26,7 +26,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
+      <div className="w-full md:w-1/2">
         <img
           src={imageHome}
           alt="Home"
