@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from './components/Navbar';
 import ContactUs from './components/ContactUs';
 import Home from './components/Home';
-import Features from './components/features';
+import Features from './components/Features';
 import Products from './components/Products';
 import Testimonial from './components/Testimonial';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
