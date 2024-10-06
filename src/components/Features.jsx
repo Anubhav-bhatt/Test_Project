@@ -8,8 +8,8 @@ const Features = () => {
         Features
       </div>
 
-      <div className="flex items-center">
-        <div className="w-1/2">
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/2">
           <img
             src={Feature_image}
             alt="Feature_image"
@@ -17,8 +17,8 @@ const Features = () => {
           />
         </div>
 
-        <div className="w-1/2 pl-8">
-          <h2 className="text-2xl  text-gray-900 mb-4">Card title</h2>
+        <div className="w-full md:w-1/2 pl-8">
+          <h2 className="text-2xl text-gray-900 mb-4">Card title</h2>
           <p className="text-gray-700">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
@@ -26,16 +26,26 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex items-center">
-        <div className="w-1/2 pl-8">
-          <h2 className="text-2xl  text-gray-900 mb-4 px-10">Card title</h2>
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/2 pl-8">
+          <h2 className="text-2xl text-gray-900 mb-4 px-10">Card title</h2>
           <p className="text-gray-700 px-10">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
 
-        <div className="w-1/2">
+        <div className="w-full md:w-1/2">
+          <img
+            src={Feature_image}
+            alt="Feature_image"
+            className="w-full h-auto object-cover p-10"
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/2">
           <img
             src={Feature_image}
             alt="Feature_image"
@@ -43,19 +53,8 @@ const Features = () => {
           />
         </div>
 
-        
-      </div>
-      <div className="flex items-center">
-        <div className="w-1/2">
-          <img
-            src={Feature_image}
-            alt="Feature_image"
-            className="w-full h-auto object-cove p-10"
-          />
-        </div>
-
-        <div className="w-1/2 pl-8">
-          <h2 className="text-2xl  text-gray-900 mb-4">Card title</h2>
+        <div className="w-full md:w-1/2 pl-8">
+          <h2 className="text-2xl text-gray-900 mb-4">Card title</h2>
           <p className="text-gray-700">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
