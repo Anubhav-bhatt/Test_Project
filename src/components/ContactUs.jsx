@@ -4,12 +4,12 @@ import image from "../assets/images/image.png";
 const ContactUs = () => {
   return (
     <div>
-      <div className="flex justify-center text-gray-900 text-2xl mb-8 py-20">
+      <div className="flex justify-center text-gray-900 text-2xl mb-8 py-10 sm:py-20">
         Contact Us
       </div>
 
-      <div className="flex justify-between items-start p-8 bg-white">
-        <div className="flex-shrink-0 w-1/2">
+      <div className="flex flex-col md:flex-row justify-between items-start p-8 bg-white">
+        <div className="w-full md:w-1/2">
           <img
             src={image}
             alt="Contact Us"
@@ -17,8 +17,8 @@ const ContactUs = () => {
           />
         </div>
 
-        <div className="w-1/2 pl-8">
-          <form action="">
+        <div className="w-full md:w-1/2 md:pl-8 mt-8 md:mt-0">
+          <form>
             <div className="mb-4">
               <label htmlFor="name" className="block text-gray-900 mb-2">
                 Name
@@ -46,7 +46,6 @@ const ContactUs = () => {
                 Feedback
               </label>
               <textarea
-                placeholder=""
                 rows="4"
                 className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
@@ -64,13 +63,12 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className=" flex text-center p-4 bg-gradient-to-r from-purple-400 to-blue-900  w-full text-white ">
-        <div className="w-1/4">
-          
+      <div className="flex flex-col md:flex-row text-center p-4 bg-gradient-to-r from-purple-400 to-blue-900 w-full text-white">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0">
           <ul>
             <h1 className="text-2xl p-4">CONTACT US</h1>
             <li className="text-bold p-4">
-              E mail <br />
+              Email <br />
               contact@JILLIONTECHNOLOGIES@COM
             </li>
             <li className="text-bold p-4">
@@ -84,9 +82,8 @@ const ContactUs = () => {
           </ul>
         </div>
 
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0">
           <h1 className="text-2xl p-4">COMPANY</h1>
-
           <ul>
             <li>About Us</li>
             <li>Services</li>
@@ -96,37 +93,22 @@ const ContactUs = () => {
           </ul>
         </div>
 
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0">
           <h1 className="text-2xl p-4">SERVICES</h1>
           <ul>
-            <li>
-              Website Development
-            </li>
-            <li>
-              Mobile App Development
-            </li>
-            <li>
-              E-commerce Development
-            </li>
-            <li>
-              Customer Software Development
-            </li>
+            <li>Website Development</li>
+            <li>Mobile App Development</li>
+            <li>E-commerce Development</li>
+            <li>Customer Software Development</li>
           </ul>
         </div>
 
-
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4">
           <h1 className="text-2xl p-4">SUPPORT</h1>
           <ul>
-            <li>
-            Contact
-            </li>
-            <li>
-              Term & Policy
-            </li>
-           
+            <li>Contact</li>
+            <li>Term & Policy</li>
           </ul>
-
         </div>
       </div>
     </div>
